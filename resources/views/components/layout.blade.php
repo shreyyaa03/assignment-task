@@ -5,100 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <!-- Intro settings -->
-        <style>
-          /* Default height for small devices */
-          #intro-example {
-            height: 400px;
-          }
-      
-          /* Height for devices larger than 992px */
-          @media (min-width: 992px) {
-            #intro-example {
-              height: 600px;
-            }
-          }
-        </style>
-      
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-          <div class="container-fluid">
-            <button
-              data-mdb-collapse-init
-              class="navbar-toggler"
-              type="button"
-              data-mdb-target="#navbarExample01"
-              aria-controls="navbarExample01"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarExample01">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <!-- Navbar -->
-      
-        <!-- Background image -->
-        <div
-          id="intro-example"
-          class="p-5 text-center bg-image"
-          style="background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');"
-        >
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="text-white">
-                <h1 class="mb-3">Learn Bootstrap 5 with MDB</h1>
-                <h5 class="mb-4">Best & free guide of responsive web design</h5>
-                <a
-                  data-mdb-ripple-init
-                  class="btn btn-outline-light btn-lg m-2"
-                  href="https://www.youtube.com/watch?v=c9B4TPnak1A"
-                  role="button"
-                  rel="nofollow"
-                  target="_blank"
-                >Start tutorial</a
-                >
-                <a
-                  data-mdb-ripple-init
-                  class="btn btn-outline-light btn-lg m-2"
-                  href="https://mdbootstrap.com/docs/standard/"
-                  target="_blank"
-                  role="button"
-                >Download MDB UI KIT</a
-                >
-              </div>
-            </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">My-Task</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/signup">Signup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Login</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <!-- Background image -->
+      </nav>
       </header>
 
       {{$slot}}
 
-      <footer>
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2021 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-          </div>
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="text-muted">© 2021 Company, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
       </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="chrome-extension://efcapamiilmdfbbilogcddbdckjhpajj/sm.bundle.js" data-pname="fatkun-pro-mv3" data-asset-path="https://fkpm3.s3.ap-northeast-2.amazonaws.com"></script>
 </body>
 </html>
