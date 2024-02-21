@@ -17,5 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/signup',function(){
-    return view('signup');
+    return view('components.signup');
+});
+Route::get('/login',function(){
+    return view('components.login');
 });
